@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background_sign_up"
+        tools:context=".MainActivity">
+
+
+    <TextView
+            android:text="@string/tv_create"
+            android:layout_width="@dimen/tv_create_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tv_create"
+            android:textSize="@dimen/tv_create_size"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.168"/>
+
+    <ImageView
+            android:layout_width="@dimen/iv_photo"
+            android:layout_height="@dimen/iv_photo"
+            android:background="@drawable/background2"
+            android:src="@mipmap/user_image"
+            android:id="@+id/iv_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintVertical_bias="0.339"/>
+
+    <TextView
+            android:layout_width="@dimen/tv_photo_width"
+            android:layout_height="@dimen/tv_photo_height"
+            android:text="@string/tv_photo"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
+            app:layout_constraintEnd_toEndOf="@+id/iv_photo"
+            app:layout_constraintStart_toStartOf="@+id/iv_photo"
+            android:id="@+id/textView2"/>
+
+    <TextView
+            android:layout_width="@dimen/background2_width"
+            android:layout_height="@dimen/background2_height"
+            android:background="@drawable/background2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.785"
+            app:layout_constraintVertical_bias="0.339"
+            android:id="@+id/textView"/>
+
+    <EditText
+            android:layout_width="@dimen/et_name_width"
+            android:layout_height="@dimen/et_name_height"
+            android:inputType="text"
+            android:hint="@string/et_first_name"
+            android:textSize="@dimen/et_name_size"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"
+            android:id="@+id/editText"/>
+
+    <EditText
+            android:layout_width="@dimen/et_name_width"
+            android:layout_height="@dimen/et_name_height"
+            android:inputType="text"
+            android:hint="@string/et_last_name"
+            android:textSize="@dimen/et_name_size"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:id="@+id/editText2"/>
+
+    <TextView
+            android:layout_width="@dimen/background_width"
+            android:layout_height="@dimen/background_height"
+            android:background="@drawable/background2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_email"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.499"/>
+
+    <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:src="@mipmap/email_icon"
+            app:layout_constraintTop_toTopOf="@+id/tv_email"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_email"
+            app:layout_constraintStart_toStartOf="@+id/tv_email"
+            android:id="@+id/iv_email"/>
+
+    <EditText
+            android:layout_width="@dimen/et_sign_up_width"
+            android:layout_height="@dimen/et_sign_up_height"
+            android:inputType="textEmailAddress"
+            android:hint="@string/et_email"
+            app:layout_constraintEnd_toEndOf="@+id/tv_email"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_email"
+            app:layout_constraintTop_toTopOf="@+id/tv_email"
+            app:layout_constraintStart_toEndOf="@+id/iv_email"
+            android:id="@+id/editText3"/>
+
+    <TextView
+            android:layout_width="@dimen/background_width"
+            android:layout_height="@dimen/background_height"
+            android:background="@drawable/background2"
+            android:id="@+id/tv_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            app:layout_constraintVertical_bias="0.103"/>
+
+    <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:src="@mipmap/lock_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_password"
+            app:layout_constraintTop_toTopOf="@+id/tv_password"
+            app:layout_constraintStart_toStartOf="@+id/tv_password"
+            android:id="@+id/iv_password"/>
+
+    <EditText
+            android:layout_width="@dimen/et_sign_up_width"
+            android:layout_height="@dimen/et_sign_up_height"
+            android:inputType="textPassword"
+            android:hint="@string/et_password"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_password"
+            app:layout_constraintEnd_toEndOf="@+id/tv_password"
+            app:layout_constraintTop_toTopOf="@+id/tv_password"
+            app:layout_constraintStart_toEndOf="@+id/iv_password"
+            android:id="@+id/editText4"/>
+
+    <TextView
+            android:layout_width="@dimen/background_width"
+            android:layout_height="@dimen/background_height"
+            android:background="@drawable/background2"
+            android:id="@+id/tv_confirm_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password"
+            app:layout_constraintVertical_bias="0.142"/>
+
+    <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:src="@mipmap/lock_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_confirm_password"
+            app:layout_constraintTop_toTopOf="@+id/tv_confirm_password"
+            app:layout_constraintStart_toStartOf="@+id/tv_confirm_password"
+            android:id="@+id/imageView5"/>
+
+    <EditText
+            android:layout_width="@dimen/et_sign_up_width"
+            android:layout_height="@dimen/et_sign_up_height"
+            android:inputType="textPassword"
+            android:hint="@string/et_confirm_password"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_confirm_password"
+            app:layout_constraintTop_toTopOf="@+id/tv_confirm_password"
+            app:layout_constraintEnd_toEndOf="@+id/tv_confirm_password"
+            android:id="@+id/editText5"/>
+
+    <Button
+            android:layout_width="@dimen/background_width"
+            android:layout_height="@dimen/background_height"
+            android:text="@string/btn_create"
+            android:textColor="@color/white"
+            android:background="@drawable/background3"
+            android:id="@+id/btn_create"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintTop_toBottomOf="@+id/tv_confirm_password"
+            app:layout_constraintVertical_bias="0.236"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_login"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_create"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintVertical_bias="0.802"
+            android:id="@+id/textView3"/>
+
+    <Button
+            android:layout_width="@dimen/btn_login_width"
+            android:layout_height="@dimen/btn_login_height"
+            android:text="@string/btn_login"
+            android:textSize="@dimen/btn_login_size"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/color1"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_create"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.8"
+            android:onClick="changeActivity"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

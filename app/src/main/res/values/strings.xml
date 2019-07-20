@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lesson02</string>
+    <string name="tv_create">Create your account!</string>
+    <string name="tv_photo">Add your photo</string>
+    <string name="et_first_name">First Name</string>
+    <string name="et_last_name">Last Name</string>
+    <string name="et_email">E-mail</string>
+    <string name="et_password">Password</string>
+    <string name="et_confirm_password">Confirm Password</string>
+    <string name="btn_create">Create Account</string>
+    <string name="tv_login">Already have an account?</string>
+    <string name="btn_login">Login.</string>
+    <string name="tv_Login">Log In</string>
+    <string name="et_user">User</string>
+    <string name="et_keevarleo">keevarleo</string>
+    <string name="et_pass">Password</string>
+    <string name="btn_Login">Log in</string>
+    <string name="tv_sign_up">First time here?</string>
+    <string name="btn_sign_up">Sign up.</string>
+    <string name="todo">TODO</string>
+</resources>
